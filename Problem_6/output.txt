@@ -1,0 +1,45 @@
+=== Building Graph for Problem 6 ===
+Parsed 49869 road segments from CSV
+Built speed-differentiated road graph with 46669 nodes and 53878 edges
+Parsed 14 metro segments from CSV
+Added 14 metro edges (speed-differentiated)
+Parsed 19 bus segments from CSV
+Added 19 Uttara bus edges (speed-differentiated)
+Parsed 17 bus segments from CSV
+Added 17 Bikolpo bus edges (speed-differentiated)
+
+Total nodes in combined graph: 46669
+
+Enter source coordinates (lat lon): Enter destination coordinates (lat lon): Enter starting time (hour minute, 24-hour format): 
+Finding nearest nodes...
+Source snapped to node 2638 at (23.7226180, 90.3996210) [distance: 0.0175403 km]
+Destination snapped to node 29456 at (23.7401740, 90.4108660) [distance: 0.0539333 km]
+
+Running Dijkstra's algorithm (minimizing cost)...
+
+=== ROUTE FOUND ===
+Total time: 8.36 minutes
+Total distance: 2.788 km
+Number of nodes in path: 69
+
+Path (first 10 segments):
+  car: (23.723, 90.400) -> (23.722, 90.400)
+  car: (23.722, 90.400) -> (23.722, 90.400)
+  car: (23.722, 90.400) -> (23.723, 90.400)
+  car: (23.723, 90.400) -> (23.723, 90.400)
+  car: (23.723, 90.400) -> (23.724, 90.400)
+  car: (23.724, 90.400) -> (23.724, 90.400)
+  car: (23.724, 90.400) -> (23.725, 90.400)
+  car: (23.725, 90.400) -> (23.725, 90.400)
+  car: (23.725, 90.400) -> (23.726, 90.400)
+  car: (23.726, 90.400) -> (23.726, 90.401)
+  ... (58 more segments)
+
+Generating output files...
+Text directions saved to route_output.txt
+KML file saved to route.kml
+
+Done! You can now:
+  - View route_output.txt for time-minimized directions (realistic speeds)
+  - Open route.kml in Google Earth or Google MyMaps
+  - Red=Car, Green=Metro, Blue=Uttara Bus, Yellow=Bikolpo Bus

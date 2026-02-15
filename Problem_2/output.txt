@@ -1,0 +1,41 @@
+=== Building Graph for Problem 2 ===
+Parsed 49869 road segments from CSV
+Built road graph with 46669 nodes and 53878 edges
+Parsed 14 metro segments from CSV
+Added 14 metro edges to graph
+
+Total nodes in combined graph: 46669
+
+Enter source coordinates (lat lon): Enter destination coordinates (lat lon): 
+Finding nearest nodes...
+Source snapped to node 44462 at (23.8753620, 90.3965330) [distance: 0.0240652 km]
+Destination snapped to node 36101 at (23.7807910, 90.4070080) [distance: 0.0313562 km]
+
+Running Dijkstra's algorithm (minimizing cost)...
+
+=== ROUTE FOUND ===
+Total cost: 262.57 Taka
+Total distance: 13.129 km
+Number of nodes in path: 99
+
+Path (first 10 segments):
+  car: (23.875, 90.397) -> (23.875, 90.397)
+  car: (23.875, 90.397) -> (23.874, 90.397)
+  car: (23.874, 90.397) -> (23.874, 90.397)
+  car: (23.874, 90.397) -> (23.874, 90.397)
+  car: (23.874, 90.397) -> (23.874, 90.397)
+  car: (23.874, 90.397) -> (23.873, 90.397)
+  car: (23.873, 90.397) -> (23.873, 90.397)
+  car: (23.873, 90.397) -> (23.872, 90.397)
+  car: (23.872, 90.397) -> (23.872, 90.397)
+  car: (23.872, 90.397) -> (23.871, 90.397)
+  ... (88 more segments)
+
+Generating output files...
+Text directions saved to route_output.txt
+KML file saved to route.kml
+
+Done! You can now:
+  - View route_output.txt for turn-by-turn directions
+  - Open route.kml in Google Earth or Google MyMaps
+  - Red lines = Car segments, Green lines = Metro segments

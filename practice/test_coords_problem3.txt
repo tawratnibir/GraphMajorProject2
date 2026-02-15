@@ -1,0 +1,19 @@
+Test Case 1: Metro corridor with bus alternative
+Source: 23.8754 90.3963
+Destination: 23.7808 90.4067
+
+Test Case 2: Cross-city with multiple transit options
+Source: 23.8103 90.4125
+Destination: 23.7504 90.3884
+
+Test Case 3: Bus route coverage area
+Source: 23.7650 90.3800
+Destination: 23.7550 90.3900
+
+Test Case 4: Northern area with Uttara Bus
+Source: 23.8500 90.4000
+Destination: 23.8000 90.4100
+
+Test Case 5: Central Dhaka with Bikolpo Bus
+Source: 23.7300 90.3920
+Destination: 23.7100 90.4050
