@@ -90,52 +90,81 @@ int getNodeId(Point p) {
     return idMap[k];
 }
 
-// Dijkstra's algorithm for shortest path
+// Dijkstra's algorithm with time constraints for Problem 4
 // Parameters:
-//   adj - adjacency list with double weights
+//   adj - adjacency list with double weights (cost)
 //   source - source node ID
 //   nodeCount - total number of nodes
-// Returns: pair of (distance map, parent map)
-pair<map<int, double>, map<int, int>> dijkstra(
+//   startTime - journey start time
+// Returns: tuple of (cost map, parent map, arrival time map)
+tuple<map<int, double>, map<int, int>, map<int, TimeInfo>> dijkstraWithTime(
     map<int, vector<pair<int, double>>>& adj, 
     int source, 
-    int nodeCount
+    int nodeCount,
+    TimeInfo startTime
 ) {
     priority_queue<pair<double, int>, vector<pair<double, int>>, greater<pair<double, int>>> pq;
     
-    map<int, double> dist;
+    map<int, double> cost;
     map<int, int> parent;
+    map<int, TimeInfo> arrivalTime;
     
-    // Initialize distances to infinity and parent to -1
+    // Initialize costs to infinity and parent to -1
     for(int i = 0; i < nodeCount; i++) {
-        dist[i] = 1e18;
+        cost[i] = 1e18;
         parent[i] = -1;
     }
 
-    dist[source] = 0.0;
+    cost[source] = 0.0;
+    arrivalTime[source] = startTime;
     pq.push({0.0, source});
 
     while (!pq.empty()) {
-        double d = pq.top().first;
+        double c = pq.top().first;
         int node = pq.top().second;
         pq.pop();
 
         // Skip if we've found a better path already
-        if(d > dist[node]) continue;
+        if(c > cost[node]) continue;
+        
+        TimeInfo timeAtNode = arrivalTime[node];
 
         for(auto& edge : adj[node]) {
             int neighbor = edge.first;
-            double weight = edge.second;
+            double edgeCost = edge.second;
+            
+            // Get edge metadata
+            EdgeInfo info = edgeInfo[{node, neighbor}];
+            
+            // Calculate arrival time at neighbor
+            TimeInfo timeAtNeighbor = timeAtNode;
+            
+            // If public transport, add waiting time and check operating hours
+            if(info.type != "car") {
+                int waitTime = getWaitingTime(timeAtNeighbor);
+                timeAtNeighbor = addMinutes(timeAtNeighbor, waitTime);
+                
+                // Check if public transport is operating at this time
+                if(!isPublicTransportOperating(timeAtNeighbor)) {
+                    continue; // Skip this edge - public transport not operating
+                }
+            }
+            
+            // Add travel time (30 km/h average speed)
+            int travelTime = (int)((info.distance / 30.0) * 60);
+            timeAtNeighbor = addMinutes(timeAtNeighbor, travelTime);
 
-            if(dist[node] + weight < dist[neighbor]) {
-                dist[neighbor] = dist[node] + weight;
+            // Check if this is a better path (by cost)
+            if(cost[node] + edgeCost < cost[neighbor]) {
+                cost[neighbor] = cost[node] + edgeCost;
                 parent[neighbor] = node;
-                pq.push({dist[neighbor], neighbor});
+                arrivalTime[neighbor] = timeAtNeighbor;
+                pq.push({cost[neighbor], neighbor});
             }
         }
     }
     
-    return {dist, parent};
+    return {cost, parent, arrivalTime};
 }
 
 double haversineDistance(double lat1, double lon1, double lat2, double lon2) {
@@ -960,11 +989,12 @@ int main() {
          << " at (" << nodes[destNode].lat << ", " << nodes[destNode].lon << ")"
          << " [distance: " << destDist << " km]" << endl;
     
-    // Run Dijkstra (using cost as weight)
-    cout << "\nRunning Dijkstra's algorithm (minimizing cost)..." << endl;
-    pair<map<int, double>, map<int, int>> result = dijkstra(adj, srcNode, nodes.size());
-    map<int, double> cost = result.first;
-    map<int, int> parent = result.second;
+    // Run time-aware Dijkstra (minimizing cost with time constraints)
+    cout << "\nRunning time-aware Dijkstra's algorithm (minimizing cost with time constraints)..." << endl;
+    map<int, double> cost;
+    map<int, int> parent;
+    map<int, TimeInfo> arrivalTimeMap;
+    tie(cost, parent, arrivalTimeMap) = dijkstraWithTime(adj, srcNode, nodes.size(), startTime);
     
     // Check if destination is reachable
     if(cost[destNode] >= 1e17) {

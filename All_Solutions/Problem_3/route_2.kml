@@ -42,14 +42,14 @@
       <name>Source</name>
       <styleUrl>#blackMarker</styleUrl>
       <Point>
-        <coordinates>90.397601,23.865117,0</coordinates>
+        <coordinates>90.407008,23.780791,0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <name>Destination</name>
       <styleUrl>#blueMarker</styleUrl>
       <Point>
-        <coordinates>90.412122,23.809921,0</coordinates>
+        <coordinates>90.376505,23.745467,0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -57,8 +57,8 @@
       <styleUrl>#carLine</styleUrl>
       <LineString>
         <coordinates>
-          90.397601,23.865117,0
-          90.397595,23.864677,0
+          90.407008,23.780791,0
+          90.406974,23.780485,0
         </coordinates>
       </LineString>
     </Placemark>
@@ -67,8 +67,8 @@
       <styleUrl>#carLine</styleUrl>
       <LineString>
         <coordinates>
-          90.397595,23.864677,0
-          90.397594,23.864495,0
+          90.406974,23.780485,0
+          90.405578,23.780701,0
         </coordinates>
       </LineString>
     </Placemark>
@@ -77,8 +77,8 @@
       <styleUrl>#carLine</styleUrl>
       <LineString>
         <coordinates>
-          90.397594,23.864495,0
-          90.398142,23.864504,0
+          90.405578,23.780701,0
+          90.404152,23.780831,0
         </coordinates>
       </LineString>
     </Placemark>
@@ -87,8 +87,8 @@
       <styleUrl>#carLine</styleUrl>
       <LineString>
         <coordinates>
-          90.398142,23.864504,0
-          90.398136,23.863888,0
+          90.404152,23.780831,0
+          90.403043,23.780880,0
         </coordinates>
       </LineString>
     </Placemark>
@@ -97,8 +97,8 @@
       <styleUrl>#carLine</styleUrl>
       <LineString>
         <coordinates>
-          90.398136,23.863888,0
-          90.398140,23.863794,0
+          90.403043,23.780880,0
+          90.402421,23.780908,0
         </coordinates>
       </LineString>
     </Placemark>
@@ -107,8 +107,8 @@
       <styleUrl>#carLine</styleUrl>
       <LineString>
         <coordinates>
-          90.398140,23.863794,0
-          90.398156,23.863173,0
+          90.402421,23.780908,0
+          90.401256,23.780961,0
         </coordinates>
       </LineString>
     </Placemark>
@@ -117,8 +117,8 @@
       <styleUrl>#carLine</styleUrl>
       <LineString>
         <coordinates>
-          90.398156,23.863173,0
-          90.398857,23.863202,0
+          90.401256,23.780961,0
+          90.400282,23.781009,0
         </coordinates>
       </LineString>
     </Placemark>
@@ -127,8 +127,8 @@
       <styleUrl>#carLine</styleUrl>
       <LineString>
         <coordinates>
-          90.398857,23.863202,0
-          90.398830,23.862732,0
+          90.400282,23.781009,0
+          90.399476,23.781063,0
         </coordinates>
       </LineString>
     </Placemark>
@@ -137,88 +137,38 @@
       <styleUrl>#carLine</styleUrl>
       <LineString>
         <coordinates>
-          90.398830,23.862732,0
-          90.399315,23.862699,0
+          90.399476,23.781063,0
+          90.398782,23.781108,0
         </coordinates>
       </LineString>
     </Placemark>
     <Placemark>
-      <name>Car</name>
-      <styleUrl>#carLine</styleUrl>
-      <LineString>
-        <coordinates>
-          90.399315,23.862699,0
-          90.399679,23.862668,0
-        </coordinates>
-      </LineString>
-    </Placemark>
-    <Placemark>
-      <name>Car</name>
-      <styleUrl>#carLine</styleUrl>
-      <LineString>
-        <coordinates>
-          90.399679,23.862668,0
-          90.399733,23.862672,0
-        </coordinates>
-      </LineString>
-    </Placemark>
-    <Placemark>
-      <name>Car</name>
-      <styleUrl>#carLine</styleUrl>
-      <LineString>
-        <coordinates>
-          90.399733,23.862672,0
-          90.400028,23.862702,0
-        </coordinates>
-      </LineString>
-    </Placemark>
-    <Placemark>
-      <name>Car</name>
-      <styleUrl>#carLine</styleUrl>
-      <LineString>
-        <coordinates>
-          90.400028,23.862702,0
-          90.400072,23.861872,0
-        </coordinates>
-      </LineString>
-    </Placemark>
-    <Placemark>
-      <name>Car</name>
-      <styleUrl>#carLine</styleUrl>
-      <LineString>
-        <coordinates>
-          90.400072,23.861872,0
-          90.400394,23.860737,0
-        </coordinates>
-      </LineString>
-    </Placemark>
-    <Placemark>
-      <name>Uttara Bus: Khilkhet to Jashim Uddin</name>
+      <name>Uttara Bus: Jahangir Gate to Mohakhali</name>
       <styleUrl>#uttaraBusLine</styleUrl>
       <LineString>
         <coordinates>
-          90.400394,23.860737,0
-          90.419952,23.828786,0
+          90.398782,23.781108,0
+          90.390938,23.775444,0
         </coordinates>
       </LineString>
     </Placemark>
     <Placemark>
-      <name>Uttara Bus: Khilkhet to Kuril</name>
+      <name>Uttara Bus: Jahangir Gate to Bijoy Sarani</name>
       <styleUrl>#uttaraBusLine</styleUrl>
       <LineString>
         <coordinates>
-          90.419952,23.828786,0
-          90.419038,23.821667,0
+          90.390938,23.775444,0
+          90.389064,23.765148,0
         </coordinates>
       </LineString>
     </Placemark>
     <Placemark>
-      <name>Uttara Bus: Kuril to Shewra</name>
+      <name>Uttara Bus: Bijoy Sarani to Farm Gate</name>
       <styleUrl>#uttaraBusLine</styleUrl>
       <LineString>
         <coordinates>
-          90.419038,23.821667,0
-          90.414977,23.818866,0
+          90.389064,23.765148,0
+          90.390157,23.758382,0
         </coordinates>
       </LineString>
     </Placemark>
@@ -227,8 +177,8 @@
       <styleUrl>#carLine</styleUrl>
       <LineString>
         <coordinates>
-          90.414977,23.818866,0
-          90.415297,23.818438,0
+          90.390157,23.758382,0
+          90.390298,23.757687,0
         </coordinates>
       </LineString>
     </Placemark>
@@ -237,8 +187,8 @@
       <styleUrl>#carLine</styleUrl>
       <LineString>
         <coordinates>
-          90.415297,23.818438,0
-          90.412778,23.816645,0
+          90.390298,23.757687,0
+          90.389820,23.756726,0
         </coordinates>
       </LineString>
     </Placemark>
@@ -247,8 +197,8 @@
       <styleUrl>#carLine</styleUrl>
       <LineString>
         <coordinates>
-          90.412778,23.816645,0
-          90.412816,23.815729,0
+          90.389820,23.756726,0
+          90.389406,23.755746,0
         </coordinates>
       </LineString>
     </Placemark>
@@ -257,8 +207,8 @@
       <styleUrl>#carLine</styleUrl>
       <LineString>
         <coordinates>
-          90.412816,23.815729,0
-          90.412830,23.815543,0
+          90.389406,23.755746,0
+          90.389268,23.755458,0
         </coordinates>
       </LineString>
     </Placemark>
@@ -267,8 +217,8 @@
       <styleUrl>#carLine</styleUrl>
       <LineString>
         <coordinates>
-          90.412830,23.815543,0
-          90.412844,23.815239,0
+          90.389268,23.755458,0
+          90.389159,23.755230,0
         </coordinates>
       </LineString>
     </Placemark>
@@ -277,8 +227,8 @@
       <styleUrl>#carLine</styleUrl>
       <LineString>
         <coordinates>
-          90.412844,23.815239,0
-          90.412869,23.814751,0
+          90.389159,23.755230,0
+          90.388704,23.754278,0
         </coordinates>
       </LineString>
     </Placemark>
@@ -287,8 +237,8 @@
       <styleUrl>#carLine</styleUrl>
       <LineString>
         <coordinates>
-          90.412869,23.814751,0
-          90.412902,23.814278,0
+          90.388704,23.754278,0
+          90.388343,23.753523,0
         </coordinates>
       </LineString>
     </Placemark>
@@ -297,8 +247,8 @@
       <styleUrl>#carLine</styleUrl>
       <LineString>
         <coordinates>
-          90.412902,23.814278,0
-          90.412942,23.813806,0
+          90.388343,23.753523,0
+          90.388196,23.753216,0
         </coordinates>
       </LineString>
     </Placemark>
@@ -307,8 +257,8 @@
       <styleUrl>#carLine</styleUrl>
       <LineString>
         <coordinates>
-          90.412942,23.813806,0
-          90.412956,23.813318,0
+          90.388196,23.753216,0
+          90.388062,23.752935,0
         </coordinates>
       </LineString>
     </Placemark>
@@ -317,8 +267,8 @@
       <styleUrl>#carLine</styleUrl>
       <LineString>
         <coordinates>
-          90.412956,23.813318,0
-          90.412987,23.812854,0
+          90.388062,23.752935,0
+          90.387936,23.752671,0
         </coordinates>
       </LineString>
     </Placemark>
@@ -327,8 +277,8 @@
       <styleUrl>#carLine</styleUrl>
       <LineString>
         <coordinates>
-          90.412987,23.812854,0
-          90.412989,23.812826,0
+          90.387936,23.752671,0
+          90.387660,23.752095,0
         </coordinates>
       </LineString>
     </Placemark>
@@ -337,8 +287,8 @@
       <styleUrl>#carLine</styleUrl>
       <LineString>
         <coordinates>
-          90.412989,23.812826,0
-          90.413028,23.812347,0
+          90.387660,23.752095,0
+          90.387169,23.751059,0
         </coordinates>
       </LineString>
     </Placemark>
@@ -347,8 +297,8 @@
       <styleUrl>#carLine</styleUrl>
       <LineString>
         <coordinates>
-          90.413028,23.812347,0
-          90.413052,23.811898,0
+          90.387169,23.751059,0
+          90.386931,23.750439,0
         </coordinates>
       </LineString>
     </Placemark>
@@ -357,8 +307,8 @@
       <styleUrl>#carLine</styleUrl>
       <LineString>
         <coordinates>
-          90.413052,23.811898,0
-          90.413075,23.811406,0
+          90.386931,23.750439,0
+          90.386839,23.750198,0
         </coordinates>
       </LineString>
     </Placemark>
@@ -367,8 +317,8 @@
       <styleUrl>#carLine</styleUrl>
       <LineString>
         <coordinates>
-          90.413075,23.811406,0
-          90.413077,23.811375,0
+          90.386839,23.750198,0
+          90.386792,23.750074,0
         </coordinates>
       </LineString>
     </Placemark>
@@ -377,8 +327,8 @@
       <styleUrl>#carLine</styleUrl>
       <LineString>
         <coordinates>
-          90.413077,23.811375,0
-          90.413101,23.810937,0
+          90.386792,23.750074,0
+          90.386438,23.749062,0
         </coordinates>
       </LineString>
     </Placemark>
@@ -387,8 +337,8 @@
       <styleUrl>#carLine</styleUrl>
       <LineString>
         <coordinates>
-          90.413101,23.810937,0
-          90.413122,23.810439,0
+          90.386438,23.749062,0
+          90.385803,23.749159,0
         </coordinates>
       </LineString>
     </Placemark>
@@ -397,8 +347,8 @@
       <styleUrl>#carLine</styleUrl>
       <LineString>
         <coordinates>
-          90.413122,23.810439,0
-          90.413152,23.809972,0
+          90.385803,23.749159,0
+          90.385177,23.749080,0
         </coordinates>
       </LineString>
     </Placemark>
@@ -407,8 +357,188 @@
       <styleUrl>#carLine</styleUrl>
       <LineString>
         <coordinates>
-          90.413152,23.809972,0
-          90.412122,23.809921,0
+          90.385177,23.749080,0
+          90.385160,23.748851,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Car</name>
+      <styleUrl>#carLine</styleUrl>
+      <LineString>
+        <coordinates>
+          90.385160,23.748851,0
+          90.384429,23.748829,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Car</name>
+      <styleUrl>#carLine</styleUrl>
+      <LineString>
+        <coordinates>
+          90.384429,23.748829,0
+          90.384050,23.748826,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Car</name>
+      <styleUrl>#carLine</styleUrl>
+      <LineString>
+        <coordinates>
+          90.384050,23.748826,0
+          90.384017,23.748844,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Car</name>
+      <styleUrl>#carLine</styleUrl>
+      <LineString>
+        <coordinates>
+          90.384017,23.748844,0
+          90.383698,23.748834,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Car</name>
+      <styleUrl>#carLine</styleUrl>
+      <LineString>
+        <coordinates>
+          90.383698,23.748834,0
+          90.383568,23.748834,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Car</name>
+      <styleUrl>#carLine</styleUrl>
+      <LineString>
+        <coordinates>
+          90.383568,23.748834,0
+          90.383218,23.748827,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Car</name>
+      <styleUrl>#carLine</styleUrl>
+      <LineString>
+        <coordinates>
+          90.383218,23.748827,0
+          90.382707,23.748840,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Car</name>
+      <styleUrl>#carLine</styleUrl>
+      <LineString>
+        <coordinates>
+          90.382707,23.748840,0
+          90.382326,23.748733,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Car</name>
+      <styleUrl>#carLine</styleUrl>
+      <LineString>
+        <coordinates>
+          90.382326,23.748733,0
+          90.382221,23.748698,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Car</name>
+      <styleUrl>#carLine</styleUrl>
+      <LineString>
+        <coordinates>
+          90.382221,23.748698,0
+          90.382302,23.748268,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Car</name>
+      <styleUrl>#carLine</styleUrl>
+      <LineString>
+        <coordinates>
+          90.382302,23.748268,0
+          90.380409,23.747659,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Car</name>
+      <styleUrl>#carLine</styleUrl>
+      <LineString>
+        <coordinates>
+          90.380409,23.747659,0
+          90.380444,23.747599,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Car</name>
+      <styleUrl>#carLine</styleUrl>
+      <LineString>
+        <coordinates>
+          90.380444,23.747599,0
+          90.379547,23.747447,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Car</name>
+      <styleUrl>#carLine</styleUrl>
+      <LineString>
+        <coordinates>
+          90.379547,23.747447,0
+          90.378733,23.746997,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Car</name>
+      <styleUrl>#carLine</styleUrl>
+      <LineString>
+        <coordinates>
+          90.378733,23.746997,0
+          90.378268,23.746132,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Car</name>
+      <styleUrl>#carLine</styleUrl>
+      <LineString>
+        <coordinates>
+          90.378268,23.746132,0
+          90.377513,23.746238,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Car</name>
+      <styleUrl>#carLine</styleUrl>
+      <LineString>
+        <coordinates>
+          90.377513,23.746238,0
+          90.377368,23.745980,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Car</name>
+      <styleUrl>#carLine</styleUrl>
+      <LineString>
+        <coordinates>
+          90.377368,23.745980,0
+          90.376505,23.745467,0
         </coordinates>
       </LineString>
     </Placemark>

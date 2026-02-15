@@ -14,18 +14,6 @@
         <width>4</width>
       </LineStyle>
     </Style>
-    <Style id="uttaraBusLine">
-      <LineStyle>
-        <color>ffff0000</color>
-        <width>3</width>
-      </LineStyle>
-    </Style>
-    <Style id="bikolpoBusLine">
-      <LineStyle>
-        <color>ff00ffff</color>
-        <width>3</width>
-      </LineStyle>
-    </Style>
     <Style id="blackMarker">
       <IconStyle>
         <color>ff000000</color>
@@ -193,31 +181,181 @@
       </LineString>
     </Placemark>
     <Placemark>
-      <name>Uttara Bus: Khilkhet to Jashim Uddin</name>
-      <styleUrl>#uttaraBusLine</styleUrl>
+      <name>Car</name>
+      <styleUrl>#carLine</styleUrl>
       <LineString>
         <coordinates>
           90.400394,23.860737,0
+          90.401095,23.859635,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Car</name>
+      <styleUrl>#carLine</styleUrl>
+      <LineString>
+        <coordinates>
+          90.401095,23.859635,0
+          90.404772,23.855136,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Car</name>
+      <styleUrl>#carLine</styleUrl>
+      <LineString>
+        <coordinates>
+          90.404772,23.855136,0
+          90.404976,23.854894,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Car</name>
+      <styleUrl>#carLine</styleUrl>
+      <LineString>
+        <coordinates>
+          90.404976,23.854894,0
+          90.405082,23.854769,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Car</name>
+      <styleUrl>#carLine</styleUrl>
+      <LineString>
+        <coordinates>
+          90.405082,23.854769,0
+          90.416504,23.840885,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Car</name>
+      <styleUrl>#carLine</styleUrl>
+      <LineString>
+        <coordinates>
+          90.416504,23.840885,0
+          90.417852,23.838712,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Car</name>
+      <styleUrl>#carLine</styleUrl>
+      <LineString>
+        <coordinates>
+          90.417852,23.838712,0
+          90.418367,23.837227,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Car</name>
+      <styleUrl>#carLine</styleUrl>
+      <LineString>
+        <coordinates>
+          90.418367,23.837227,0
+          90.418794,23.835634,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Car</name>
+      <styleUrl>#carLine</styleUrl>
+      <LineString>
+        <coordinates>
+          90.418794,23.835634,0
+          90.419250,23.832955,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Car</name>
+      <styleUrl>#carLine</styleUrl>
+      <LineString>
+        <coordinates>
+          90.419250,23.832955,0
           90.419952,23.828786,0
         </coordinates>
       </LineString>
     </Placemark>
     <Placemark>
-      <name>Uttara Bus: Khilkhet to Kuril</name>
-      <styleUrl>#uttaraBusLine</styleUrl>
+      <name>Car</name>
+      <styleUrl>#carLine</styleUrl>
       <LineString>
         <coordinates>
           90.419952,23.828786,0
+          90.420275,23.826830,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Car</name>
+      <styleUrl>#carLine</styleUrl>
+      <LineString>
+        <coordinates>
+          90.420275,23.826830,0
+          90.420459,23.824999,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Car</name>
+      <styleUrl>#carLine</styleUrl>
+      <LineString>
+        <coordinates>
+          90.420459,23.824999,0
+          90.420262,23.823607,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Car</name>
+      <styleUrl>#carLine</styleUrl>
+      <LineString>
+        <coordinates>
+          90.420262,23.823607,0
+          90.419859,23.822765,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Car</name>
+      <styleUrl>#carLine</styleUrl>
+      <LineString>
+        <coordinates>
+          90.419859,23.822765,0
           90.419038,23.821667,0
         </coordinates>
       </LineString>
     </Placemark>
     <Placemark>
-      <name>Uttara Bus: Kuril to Shewra</name>
-      <styleUrl>#uttaraBusLine</styleUrl>
+      <name>Car</name>
+      <styleUrl>#carLine</styleUrl>
       <LineString>
         <coordinates>
           90.419038,23.821667,0
+          90.418130,23.820968,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Car</name>
+      <styleUrl>#carLine</styleUrl>
+      <LineString>
+        <coordinates>
+          90.418130,23.820968,0
+          90.417356,23.820452,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Car</name>
+      <styleUrl>#carLine</styleUrl>
+      <LineString>
+        <coordinates>
+          90.417356,23.820452,0
           90.414977,23.818866,0
         </coordinates>
       </LineString>
