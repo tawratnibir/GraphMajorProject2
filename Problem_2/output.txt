@@ -8,28 +8,28 @@ Total nodes in combined graph: 46669
 
 Enter source coordinates (lat lon): Enter destination coordinates (lat lon): 
 Finding nearest nodes...
-Source snapped to node 22177 at (23.8341450, 90.3638330) [distance: 0.0000000 km]
-Destination snapped to node 22856 at (23.7569280, 90.3783560) [distance: 0.0000000 km]
+Source snapped to node 44598 at (23.8759560, 90.4002290) [distance: 0.0000000 km]
+Destination snapped to node 22528 at (23.8359660, 90.3679820) [distance: 0.0000000 km]
 
 Running Dijkstra's algorithm (minimizing cost)...
 
 === ROUTE FOUND ===
-Total cost: 74.42 Taka
-Total distance: 10.734 km
-Number of nodes in path: 28
+Total cost: 363.12 Taka
+Total distance: 25.169 km
+Number of nodes in path: 95
 
 Path (first 10 segments):
-  metro: Cantonment -> Mirpur12
-  metro: Mirpur12 -> Purobi Hall
-  metro: Purobi Hall -> Mirpur10
-  metro: Cantonment -> Mirpur 12
-  metro: Mirpur10 -> Kazipara
-  metro: Kazipara -> shewra para
-  metro: shewra para -> Taltola
-  metro: Taltola -> agargaon
-  metro: agargaon -> Firmgate
-  car: (23.759, 90.390) -> (23.759, 90.390)
-  ... (17 more segments)
+  car: (23.876, 90.400) -> (23.875, 90.400)
+  car: (23.875, 90.400) -> (23.875, 90.400)
+  car: (23.875, 90.400) -> (23.873, 90.400)
+  car: (23.873, 90.400) -> (23.871, 90.400)
+  car: (23.871, 90.400) -> (23.871, 90.401)
+  car: (23.871, 90.401) -> (23.871, 90.401)
+  car: (23.871, 90.401) -> (23.870, 90.400)
+  car: (23.870, 90.400) -> (23.868, 90.400)
+  car: (23.868, 90.400) -> (23.865, 90.400)
+  car: (23.865, 90.400) -> (23.864, 90.400)
+  ... (84 more segments)
 
 Generating output files...
 Text directions saved to route_output.txt

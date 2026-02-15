@@ -377,12 +377,13 @@ vector<int> reconstructPath(map<int, int>& parent, int source, int dest) {
 //   path - vector of node IDs
 //   srcLat, srcLon - original source coordinates
 //   destLat, destLon - original destination coordinates
+//   srcSnapped, destSnapped - whether source/dest are on graph nodes
 //   totalCost - total cost in Taka
 //   totalDist - total distance in km
 //   filename - output text file name
 void generateTextDirections(vector<int>& path, double srcLat, double srcLon, 
-                          double destLat, double destLon, double totalCost, 
-                          double totalDist, string filename) {
+                          double destLat, double destLon, bool srcSnapped, bool destSnapped,
+                          double totalCost, double totalDist, string filename) {
     ofstream file(filename);
     
     if(!file.is_open()) {
@@ -393,13 +394,16 @@ void generateTextDirections(vector<int>& path, double srcLat, double srcLon,
     file << fixed << setprecision(6);
     
     file << "Problem no : 2" << endl;
-    file << "Source: (" << srcLat << ", " << srcLon << ")" << endl;
-    file << "Destination: (" << destLat << ", " << destLon << ")" << endl;
-    file << "Total Cost: " << setprecision(2) << totalCost << " Taka" << endl;
-    file << "Total Distance: " << setprecision(3) << totalDist << " km" << endl;
-    file << endl;
+    file << "Minimum cost is " << setprecision(16) << totalCost << setprecision(6) << "৳ " << endl;
+    file << "Source:  (" << srcLon << ", " << srcLat << ")" << endl;
+    file << "Destination:  (" << destLon << ", " << destLat << ")" << endl;
     
-    file << setprecision(6);
+    // Handle walking from source to first graph node
+    if(!srcSnapped && path.size() > 0) {
+        Point firstNode = nodes[path[0]];
+        file << "Walk from Source (" << srcLon << ", " << srcLat 
+             << ") to (" << firstNode.lon << ", " << firstNode.lat << ")" << endl;
+    }
     
     // Generate turn-by-turn directions with transport type
     for(int i = 0; i < path.size() - 1; i++) {
@@ -411,37 +415,47 @@ void generateTextDirections(vector<int>& path, double srcLat, double srcLon,
         // Get edge info
         EdgeInfo info = edgeInfo[{u, v}];
         
+        // Output cost first
+        file << "Cost: " << setprecision(16) << info.cost << setprecision(6) << "৳ . ";
+        
         if(info.type == "metro") {
             // Metro segment
-            if(i == 0) {
-                file << "Ride Metro from Source " << info.startStation 
-                     << " (" << from.lat << ", " << from.lon << ")";
+            if(i == 0 && srcSnapped) {
+                file << " Ride Metro from Source " << info.startStation 
+                     << "(" << from.lon << ", " << from.lat << ")";
             } else {
-                file << "Ride Metro from " << info.startStation 
-                     << " (" << from.lat << ", " << from.lon << ")";
+                file << " Ride Metro from " << info.startStation 
+                     << "(" << from.lon << ", " << from.lat << ")";
             }
             
-            if(i == path.size() - 2) {
+            if(i == path.size() - 2 && destSnapped) {
                 file << " to Destination " << info.endStation 
-                     << " (" << to.lat << ", " << to.lon << ")" << endl;
+                     << " (" << to.lon << ", " << to.lat << ")" << endl;
             } else {
                 file << " to " << info.endStation 
-                     << " (" << to.lat << ", " << to.lon << ")" << endl;
+                     << " (" << to.lon << ", " << to.lat << ")" << endl;
             }
         } else {
             // Car segment
-            if(i == 0) {
-                file << "Ride Car from Source (" << from.lat << ", " << from.lon << ")";
+            if(i == 0 && srcSnapped) {
+                file << "Ride Car from Source (" << from.lon << ", " << from.lat << ")";
             } else {
-                file << "Ride Car from (" << from.lat << ", " << from.lon << ")";
+                file << "Ride Car from  (" << from.lon << ", " << from.lat << ")";
             }
             
-            if(i == path.size() - 2) {
-                file << " to Destination (" << to.lat << ", " << to.lon << ")" << endl;
+            if(i == path.size() - 2 && destSnapped) {
+                file << " to Destination (" << to.lon << ", " << to.lat << ")" << endl;
             } else {
-                file << " to (" << to.lat << ", " << to.lon << ")" << endl;
+                file << " to (" << to.lon << ", " << to.lat << ")" << endl;
             }
         }
+    }
+    
+    // Handle walking from last graph node to destination
+    if(!destSnapped && path.size() > 0) {
+        Point lastNode = nodes[path[path.size() - 1]];
+        file << "Walk from  (" << lastNode.lon << ", " << lastNode.lat 
+             << ") to Destination (" << destLon << ", " << destLat << ")" << endl;
     }
     
     file.close();
@@ -589,6 +603,10 @@ int main() {
     int destNode = destResult.first;
     double destDist = destResult.second;
     
+    // Check if source/destination are exactly on graph nodes (threshold: 0.001 km)
+    bool srcSnapped = (srcDist < 0.001);
+    bool destSnapped = (destDist < 0.001);
+    
     cout << "Source snapped to node " << srcNode 
          << " at (" << nodes[srcNode].lat << ", " << nodes[srcNode].lon << ")"
          << " [distance: " << srcDist << " km]" << endl;
@@ -648,7 +666,7 @@ int main() {
     // Generate outputs
     cout << "\nGenerating output files..." << endl;
     generateTextDirections(path, srcLat, srcLon, destLat, destLon, 
-                          cost[destNode], totalDist, "route_output.txt");
+                          srcSnapped, destSnapped, cost[destNode], totalDist, "route_output.txt");
     generateKML(path, "route.kml");
     
     cout << "\nDone! You can now:" << endl;
