@@ -3,27 +3,27 @@ Built graph with 46669 nodes and 53878 edges
 
 Enter source coordinates (lat lon): Enter destination coordinates (lat lon): 
 Finding nearest nodes...
-Source snapped to node 44462 at (23.8753620, 90.3965330) [distance: 0.0240652 km]
-Destination snapped to node 36101 at (23.7807910, 90.4070080) [distance: 0.0313562 km]
+Source snapped to node 43091 at (23.8295030, 90.4216080) [distance: 0.0000000 km]
+Destination snapped to node 27129 at (23.7760310, 90.3797010) [distance: 0.0001507 km]
 
 Running Dijkstra's algorithm...
 
 === ROUTE FOUND ===
-Total distance: 13.129 km
-Number of nodes in path: 99
+Total distance: 11.010 km
+Number of nodes in path: 92
 
 Path (first 10 nodes):
-  Node 44462: (23.875, 90.397)
-  Node 44541: (23.875, 90.397)
-  Node 44542: (23.874, 90.397)
-  Node 44526: (23.874, 90.397)
-  Node 44528: (23.874, 90.397)
-  Node 44532: (23.874, 90.397)
-  Node 44533: (23.873, 90.397)
-  Node 44537: (23.873, 90.397)
-  Node 44536: (23.872, 90.397)
-  Node 43569: (23.872, 90.397)
-  ... (89 more nodes)
+  Node 43091: (23.830, 90.422)
+  Node 43090: (23.829, 90.421)
+  Node 43079: (23.829, 90.421)
+  Node 42846: (23.829, 90.420)
+  Node 42978: (23.827, 90.420)
+  Node 42979: (23.825, 90.420)
+  Node 37559: (23.824, 90.420)
+  Node 37560: (23.823, 90.420)
+  Node 37561: (23.822, 90.419)
+  Node 42102: (23.821, 90.418)
+  ... (82 more nodes)
 
 Generating output files...
 Text directions saved to route_output.txt

@@ -1,77 +1,119 @@
-Problem no : 6
-Source: (23.722584, 90.399789)
-Destination: (23.740293, 90.410352)
-Total Time: 8.36 minutes
-Total Distance: 2.788 km
-Note: Uses realistic speeds - Car:20.000 km/h, Metro:15.000 km/h, Uttara:12.000 km/h, Bikolpo:10.000 km/h
+Problem No: 6
+Source: (23.834145, 0.000000)
+Destination: (0.000000, 0.000000)
+Starting time at source: -4:30283 AM
+Destination reaching time: 3:43 AM
 
-Time: 9:30. Cost: 0.53 minutes. Walk from Source (23.72, 90.40) to (23.72, 90.40)
-Time: 9:30. Cost: 0.13 minutes. Ride Car from (23.72, 90.40) to (23.72, 90.40)
-Time: 9:30. Cost: 0.04 minutes. Ride Car from (23.72, 90.40) to (23.72, 90.40)
-Time: 9:30. Cost: 0.26 minutes. Ride Car from (23.72, 90.40) to (23.72, 90.40)
-Time: 9:30. Cost: 0.12 minutes. Ride Car from (23.72, 90.40) to (23.72, 90.40)
-Time: 9:30. Cost: 0.15 minutes. Ride Car from (23.72, 90.40) to (23.72, 90.40)
-Time: 9:30. Cost: 0.18 minutes. Ride Car from (23.72, 90.40) to (23.72, 90.40)
-Time: 9:30. Cost: 0.06 minutes. Ride Car from (23.72, 90.40) to (23.72, 90.40)
-Time: 9:30. Cost: 0.25 minutes. Ride Car from (23.72, 90.40) to (23.73, 90.40)
-Time: 9:30. Cost: 0.12 minutes. Ride Car from (23.73, 90.40) to (23.73, 90.40)
-Time: 9:30. Cost: 0.12 minutes. Ride Car from (23.73, 90.40) to (23.73, 90.40)
-Time: 9:30. Cost: 0.15 minutes. Ride Car from (23.73, 90.40) to (23.73, 90.40)
-Time: 9:30. Cost: 0.15 minutes. Ride Car from (23.73, 90.40) to (23.73, 90.40)
-Time: 9:30. Cost: 0.24 minutes. Ride Car from (23.73, 90.40) to (23.73, 90.40)
-Time: 9:30. Cost: 0.30 minutes. Ride Car from (23.73, 90.40) to (23.73, 90.40)
-Time: 9:30. Cost: 0.07 minutes. Ride Car from (23.73, 90.40) to (23.73, 90.40)
-Time: 9:30. Cost: 0.11 minutes. Ride Car from (23.73, 90.40) to (23.73, 90.40)
-Time: 9:30. Cost: 0.07 minutes. Ride Car from (23.73, 90.40) to (23.73, 90.40)
-Time: 9:30. Cost: 0.40 minutes. Ride Car from (23.73, 90.40) to (23.73, 90.40)
-Time: 9:30. Cost: 0.15 minutes. Ride Car from (23.73, 90.40) to (23.73, 90.40)
-Time: 9:30. Cost: 0.10 minutes. Ride Car from (23.73, 90.40) to (23.73, 90.40)
-Time: 9:30. Cost: 0.14 minutes. Ride Car from (23.73, 90.40) to (23.73, 90.40)
-Time: 9:30. Cost: 0.06 minutes. Ride Car from (23.73, 90.40) to (23.73, 90.40)
-Time: 9:30. Cost: 0.12 minutes. Ride Car from (23.73, 90.40) to (23.73, 90.40)
-Time: 9:30. Cost: 0.17 minutes. Ride Car from (23.73, 90.40) to (23.73, 90.41)
-Time: 9:30. Cost: 0.06 minutes. Ride Car from (23.73, 90.41) to (23.73, 90.41)
-Time: 9:30. Cost: 0.04 minutes. Ride Car from (23.73, 90.41) to (23.73, 90.41)
-Time: 9:30. Cost: 0.05 minutes. Ride Car from (23.73, 90.41) to (23.73, 90.41)
-Time: 9:30. Cost: 0.05 minutes. Ride Car from (23.73, 90.41) to (23.73, 90.41)
-Time: 9:30. Cost: 0.13 minutes. Ride Car from (23.73, 90.41) to (23.73, 90.41)
-Time: 9:30. Cost: 0.10 minutes. Ride Car from (23.73, 90.41) to (23.73, 90.41)
-Time: 9:30. Cost: 0.07 minutes. Ride Car from (23.73, 90.41) to (23.73, 90.41)
-Time: 9:30. Cost: 0.39 minutes. Ride Car from (23.73, 90.41) to (23.73, 90.41)
-Time: 9:30. Cost: 0.18 minutes. Ride Car from (23.73, 90.41) to (23.73, 90.41)
-Time: 9:30. Cost: 0.23 minutes. Ride Car from (23.73, 90.41) to (23.73, 90.41)
-Time: 9:30. Cost: 0.20 minutes. Ride Car from (23.73, 90.41) to (23.73, 90.41)
-Time: 9:30. Cost: 0.17 minutes. Ride Car from (23.73, 90.41) to (23.73, 90.41)
-Time: 9:30. Cost: 0.01 minutes. Ride Car from (23.73, 90.41) to (23.73, 90.41)
-Time: 9:30. Cost: 0.04 minutes. Ride Car from (23.73, 90.41) to (23.73, 90.41)
-Time: 9:30. Cost: 0.10 minutes. Ride Car from (23.73, 90.41) to (23.73, 90.41)
-Time: 9:30. Cost: 0.19 minutes. Ride Car from (23.73, 90.41) to (23.73, 90.41)
-Time: 9:30. Cost: 0.07 minutes. Ride Car from (23.73, 90.41) to (23.73, 90.41)
-Time: 9:30. Cost: 0.31 minutes. Ride Car from (23.73, 90.41) to (23.74, 90.41)
-Time: 9:30. Cost: 0.11 minutes. Ride Car from (23.74, 90.41) to (23.74, 90.41)
-Time: 9:30. Cost: 0.01 minutes. Ride Car from (23.74, 90.41) to (23.74, 90.41)
-Time: 9:30. Cost: 0.08 minutes. Ride Car from (23.74, 90.41) to (23.74, 90.41)
-Time: 9:30. Cost: 0.06 minutes. Ride Car from (23.74, 90.41) to (23.74, 90.41)
-Time: 9:30. Cost: 0.07 minutes. Ride Car from (23.74, 90.41) to (23.74, 90.41)
-Time: 9:30. Cost: 0.09 minutes. Ride Car from (23.74, 90.41) to (23.74, 90.41)
-Time: 9:30. Cost: 0.03 minutes. Ride Car from (23.74, 90.41) to (23.74, 90.41)
-Time: 9:30. Cost: 0.03 minutes. Ride Car from (23.74, 90.41) to (23.74, 90.41)
-Time: 9:30. Cost: 0.06 minutes. Ride Car from (23.74, 90.41) to (23.74, 90.41)
-Time: 9:30. Cost: 0.05 minutes. Ride Car from (23.74, 90.41) to (23.74, 90.41)
-Time: 9:30. Cost: 0.07 minutes. Ride Car from (23.74, 90.41) to (23.74, 90.41)
-Time: 9:30. Cost: 0.18 minutes. Ride Car from (23.74, 90.41) to (23.74, 90.41)
-Time: 9:30. Cost: 0.02 minutes. Ride Car from (23.74, 90.41) to (23.74, 90.41)
-Time: 9:30. Cost: 0.10 minutes. Ride Car from (23.74, 90.41) to (23.74, 90.41)
-Time: 9:30. Cost: 0.14 minutes. Ride Car from (23.74, 90.41) to (23.74, 90.41)
-Time: 9:30. Cost: 0.09 minutes. Ride Car from (23.74, 90.41) to (23.74, 90.41)
-Time: 9:30. Cost: 0.03 minutes. Ride Car from (23.74, 90.41) to (23.74, 90.41)
-Time: 9:30. Cost: 0.09 minutes. Ride Car from (23.74, 90.41) to (23.74, 90.41)
-Time: 9:30. Cost: 0.17 minutes. Ride Car from (23.74, 90.41) to (23.74, 90.41)
-Time: 9:30. Cost: 0.09 minutes. Ride Car from (23.74, 90.41) to (23.74, 90.41)
-Time: 9:30. Cost: 0.05 minutes. Ride Car from (23.74, 90.41) to (23.74, 90.41)
-Time: 9:30. Cost: 0.26 minutes. Ride Car from (23.74, 90.41) to (23.74, 90.41)
-Time: 9:30. Cost: 0.04 minutes. Ride Car from (23.74, 90.41) to (23.74, 90.41)
-Time: 9:30. Cost: 0.08 minutes. Ride Car from (23.74, 90.41) to (23.74, 90.41)
-Time: 9:30. Cost: 0.14 minutes. Ride Car from (23.74, 90.41) to (23.74, 90.41)
-Time: 9:30. Cost: 0.16 minutes. Ride Car from (23.74, 90.41) to (23.74, 90.41)
-Time: 9:31. Cost: 1.62 minutes. Walk from (23.74, 90.41) to Destination (23.74, 90.41)
+-4:30283 AM - 12:56 PM, Cost: ৳0.00: Walk from Source (23.834145, 0.000000) to (23.829023, 90.343222).
+12:56 PM - 12:56 PM, Cost: ৳3.45: Ride Car from (23.83, 90.34) to (23.83, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳1.40: Ride Car from (23.83, 90.34) to (23.83, 90.35).
+12:56 PM - 12:56 PM, Cost: ৳1.45: Ride Car from (23.83, 90.35) to (23.83, 90.35).
+12:56 PM - 12:56 PM, Cost: ৳1.65: Ride Car from (23.83, 90.35) to (23.83, 90.35).
+12:56 PM - 12:56 PM, Cost: ৳5.01: Ride Car from (23.83, 90.35) to (23.82, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳3.39: Ride Car from (23.82, 90.34) to (23.82, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳2.94: Ride Car from (23.82, 90.34) to (23.82, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.67: Ride Car from (23.82, 90.34) to (23.82, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳1.27: Ride Car from (23.82, 90.34) to (23.82, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳1.62: Ride Car from (23.82, 90.34) to (23.82, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳3.27: Ride Car from (23.82, 90.34) to (23.82, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳1.59: Ride Car from (23.82, 90.34) to (23.82, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.56: Ride Car from (23.82, 90.34) to (23.82, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.59: Ride Car from (23.82, 90.34) to (23.82, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳1.39: Ride Car from (23.82, 90.34) to (23.82, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳2.22: Ride Car from (23.82, 90.34) to (23.82, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳2.92: Ride Car from (23.82, 90.34) to (23.82, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.28: Ride Car from (23.82, 90.34) to (23.82, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳3.88: Ride Car from (23.82, 90.34) to (23.81, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳2.06: Ride Car from (23.81, 90.34) to (23.81, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳2.88: Ride Car from (23.81, 90.34) to (23.81, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳2.85: Ride Car from (23.81, 90.34) to (23.81, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳2.61: Ride Car from (23.81, 90.34) to (23.81, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳1.99: Ride Car from (23.81, 90.34) to (23.81, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳2.43: Ride Car from (23.81, 90.34) to (23.81, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳1.00: Ride Car from (23.81, 90.34) to (23.81, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳2.77: Ride Car from (23.81, 90.34) to (23.81, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳3.54: Ride Car from (23.81, 90.34) to (23.80, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳4.03: Ride Car from (23.80, 90.34) to (23.80, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.58: Ride Car from (23.80, 90.34) to (23.80, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.82: Ride Car from (23.80, 90.34) to (23.80, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳2.73: Ride Car from (23.80, 90.34) to (23.80, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.74: Ride Car from (23.80, 90.34) to (23.80, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳1.02: Ride Car from (23.80, 90.34) to (23.80, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳1.62: Ride Car from (23.80, 90.34) to (23.80, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳2.86: Ride Car from (23.80, 90.34) to (23.80, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.18: Ride Car from (23.80, 90.34) to (23.80, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.24: Ride Car from (23.80, 90.34) to (23.80, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.77: Ride Car from (23.80, 90.34) to (23.80, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳1.20: Ride Car from (23.80, 90.34) to (23.80, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.71: Ride Car from (23.80, 90.34) to (23.80, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.38: Ride Car from (23.80, 90.34) to (23.80, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳1.01: Ride Car from (23.80, 90.34) to (23.80, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.25: Ride Car from (23.80, 90.34) to (23.80, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.88: Ride Car from (23.80, 90.34) to (23.80, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.74: Ride Car from (23.80, 90.34) to (23.80, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.05: Ride Car from (23.80, 90.34) to (23.80, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.63: Ride Car from (23.80, 90.34) to (23.80, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳1.10: Ride Car from (23.80, 90.34) to (23.80, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.74: Ride Car from (23.80, 90.34) to (23.80, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.65: Ride Car from (23.80, 90.34) to (23.80, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳1.08: Ride Car from (23.80, 90.34) to (23.80, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.22: Ride Car from (23.80, 90.34) to (23.80, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.44: Ride Car from (23.80, 90.34) to (23.80, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.79: Ride Car from (23.80, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.68: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳2.61: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳1.12: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.92: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.76: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.65: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳1.12: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳1.26: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳1.08: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.92: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.69: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳1.59: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.46: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.78: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳1.02: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.31: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳1.76: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.86: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳1.14: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.29: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.69: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.40: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.28: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.26: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.70: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.76: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.40: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.48: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳1.74: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.66: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.42: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.46: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.33: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.74: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.58: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.67: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.73: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.29: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.95: Ride Car from (23.79, 90.34) to (23.79, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.28: Ride Car from (23.79, 90.34) to (23.78, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.92: Ride Car from (23.78, 90.34) to (23.78, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.47: Ride Car from (23.78, 90.34) to (23.78, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.84: Ride Car from (23.78, 90.34) to (23.78, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.28: Ride Car from (23.78, 90.34) to (23.78, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.52: Ride Car from (23.78, 90.34) to (23.78, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.89: Ride Car from (23.78, 90.34) to (23.78, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.70: Ride Car from (23.78, 90.34) to (23.78, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.72: Ride Car from (23.78, 90.34) to (23.78, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.63: Ride Car from (23.78, 90.34) to (23.78, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.14: Ride Car from (23.78, 90.34) to (23.78, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.11: Ride Car from (23.78, 90.34) to (23.78, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.09: Ride Car from (23.78, 90.34) to (23.78, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.16: Ride Car from (23.78, 90.34) to (23.78, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳0.18: Ride Car from (23.78, 90.34) to (23.78, 90.34).
+12:56 PM - 12:56 PM, Cost: ৳1.50: Ride Car from (23.78, 90.34) to (23.78, 90.34).
+12:56 PM - 12:57 PM, Cost: ৳7.24: Ride Car from (23.78, 90.34) to (23.78, 90.33).
+12:57 PM - 5:42 PM, Cost: ৳0: Walk from (23.78, 90.33) to Destination (0.00, 0.00).

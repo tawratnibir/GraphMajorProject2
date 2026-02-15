@@ -8,28 +8,28 @@ Total nodes in combined graph: 46669
 
 Enter source coordinates (lat lon): Enter destination coordinates (lat lon): 
 Finding nearest nodes...
-Source snapped to node 44462 at (23.8753620, 90.3965330) [distance: 0.0240652 km]
-Destination snapped to node 36101 at (23.7807910, 90.4070080) [distance: 0.0313562 km]
+Source snapped to node 22177 at (23.8341450, 90.3638330) [distance: 0.0000000 km]
+Destination snapped to node 22856 at (23.7569280, 90.3783560) [distance: 0.0000000 km]
 
 Running Dijkstra's algorithm (minimizing cost)...
 
 === ROUTE FOUND ===
-Total cost: 262.57 Taka
-Total distance: 13.129 km
-Number of nodes in path: 99
+Total cost: 74.42 Taka
+Total distance: 10.734 km
+Number of nodes in path: 28
 
 Path (first 10 segments):
-  car: (23.875, 90.397) -> (23.875, 90.397)
-  car: (23.875, 90.397) -> (23.874, 90.397)
-  car: (23.874, 90.397) -> (23.874, 90.397)
-  car: (23.874, 90.397) -> (23.874, 90.397)
-  car: (23.874, 90.397) -> (23.874, 90.397)
-  car: (23.874, 90.397) -> (23.873, 90.397)
-  car: (23.873, 90.397) -> (23.873, 90.397)
-  car: (23.873, 90.397) -> (23.872, 90.397)
-  car: (23.872, 90.397) -> (23.872, 90.397)
-  car: (23.872, 90.397) -> (23.871, 90.397)
-  ... (88 more segments)
+  metro: Cantonment -> Mirpur12
+  metro: Mirpur12 -> Purobi Hall
+  metro: Purobi Hall -> Mirpur10
+  metro: Cantonment -> Mirpur 12
+  metro: Mirpur10 -> Kazipara
+  metro: Kazipara -> shewra para
+  metro: shewra para -> Taltola
+  metro: Taltola -> agargaon
+  metro: agargaon -> Firmgate
+  car: (23.759, 90.390) -> (23.759, 90.390)
+  ... (17 more segments)
 
 Generating output files...
 Text directions saved to route_output.txt
