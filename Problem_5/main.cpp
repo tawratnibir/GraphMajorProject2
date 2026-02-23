@@ -90,52 +90,87 @@ int getNodeId(Point p) {
     return idMap[k];
 }
 
-// Dijkstra's algorithm for shortest path
+// Dijkstra's algorithm with time constraints for Problem 5
 // Parameters:
-//   adj - adjacency list with double weights
+//   adj - adjacency list with double weights (time in hours)
 //   source - source node ID
 //   nodeCount - total number of nodes
-// Returns: pair of (distance map, parent map)
-pair<map<int, double>, map<int, int>> dijkstra(
+//   startTime - journey start time
+// Returns: tuple of (time map in hours, parent map, arrival time map)
+tuple<map<int, double>, map<int, int>, map<int, TimeInfo>> dijkstraWithTimeP5(
     map<int, vector<pair<int, double>>>& adj, 
     int source, 
-    int nodeCount
+    int nodeCount,
+    TimeInfo startTime
 ) {
     priority_queue<pair<double, int>, vector<pair<double, int>>, greater<pair<double, int>>> pq;
     
-    map<int, double> dist;
+    map<int, double> totalTime;  // Total time in hours
     map<int, int> parent;
+    map<int, TimeInfo> arrivalTime;
     
-    // Initialize distances to infinity and parent to -1
+    // Initialize times to infinity and parent to -1
     for(int i = 0; i < nodeCount; i++) {
-        dist[i] = 1e18;
+        totalTime[i] = 1e18;
         parent[i] = -1;
     }
 
-    dist[source] = 0.0;
+    totalTime[source] = 0.0;
+    arrivalTime[source] = startTime;
     pq.push({0.0, source});
 
     while (!pq.empty()) {
-        double d = pq.top().first;
+        double t = pq.top().first;
         int node = pq.top().second;
         pq.pop();
 
         // Skip if we've found a better path already
-        if(d > dist[node]) continue;
+        if(t > totalTime[node]) continue;
+        
+        TimeInfo timeAtNode = arrivalTime[node];
 
         for(auto& edge : adj[node]) {
             int neighbor = edge.first;
-            double weight = edge.second;
+            double edgeTravelTimeHours = edge.second;  // Travel time from edge weight
+            
+            // Get edge metadata
+            EdgeInfo info = edgeInfo[{node, neighbor}];
+            
+            // Calculate time components for this edge
+            double waitTimeHours = 0.0;
+            TimeInfo timeAtNeighbor = timeAtNode;
+            
+            // If public transport, add waiting time and check operating hours
+            if(info.type != "car") {
+                int waitMinutes = getWaitingTime(timeAtNeighbor);
+                timeAtNeighbor = addMinutes(timeAtNeighbor, waitMinutes);
+                waitTimeHours = waitMinutes / 60.0;
+                
+                // Check if public transport is operating at this time
+                if(!isPublicTransportOperating(timeAtNeighbor)) {
+                    continue; // Skip this edge - public transport not operating
+                }
+            }
+            
+            // Add travel time
+            int travelMinutes = (int)(edgeTravelTimeHours * 60);
+            timeAtNeighbor = addMinutes(timeAtNeighbor, travelMinutes);
+            
+            // Total time for this edge = wait time + travel time
+            double edgeTotalTime = waitTimeHours + edgeTravelTimeHours;
 
-            if(dist[node] + weight < dist[neighbor]) {
-                dist[neighbor] = dist[node] + weight;
+            // Check if this is a better path (by total time)
+            double newTotalTime = totalTime[node] + edgeTotalTime;
+            if(newTotalTime < totalTime[neighbor]) {
+                totalTime[neighbor] = newTotalTime;
                 parent[neighbor] = node;
-                pq.push({dist[neighbor], neighbor});
+                arrivalTime[neighbor] = timeAtNeighbor;
+                pq.push({totalTime[neighbor], neighbor});
             }
         }
     }
     
-    return {dist, parent};
+    return {totalTime, parent, arrivalTime};
 }
 
 double haversineDistance(double lat1, double lon1, double lat2, double lon2) {
@@ -506,6 +541,43 @@ vector<int> reconstructPath(map<int, int>& parent, int source, int dest) {
 void generateTextDirectionsMinTime(vector<int>& path, double srcLat, double srcLon, 
                           double destLat, double destLon, bool srcSnapped, bool destSnapped,
                           double totalTime, double totalDist, TimeInfo startTime, string filename) {
+    // Calculate end time first by simulating the journey
+    TimeInfo endTime = startTime;
+    
+    // Calculate initial walking time if needed
+    if(!srcSnapped) {
+        Point firstNode = nodes[path[0]];
+        double walkDist = haversineDistance(srcLat, srcLon, firstNode.lat, firstNode.lon);
+        int walkTime = (int)((walkDist / 2.0) * 60);
+        endTime = addMinutes(endTime, walkTime);
+    }
+    
+    // Calculate time through all path segments
+    for(int i = 0; i < path.size() - 1; i++) {
+        int u = path[i];
+        int v = path[i + 1];
+        EdgeInfo info = edgeInfo[{u, v}];
+        
+        // Add waiting time for public transport
+        if(info.type != "car") {
+            int waitTime = getWaitingTime(endTime);
+            endTime = addMinutes(endTime, waitTime);
+        }
+        
+        // Add travel time (10 km/h uniform speed)
+        int travelTime = (int)((info.distance / 10.0) * 60);
+        endTime = addMinutes(endTime, travelTime);
+    }
+    
+    // Calculate final walking time if needed
+    if(!destSnapped) {
+        Point lastNode = nodes[path[path.size() - 1]];
+        double walkDist = haversineDistance(lastNode.lat, lastNode.lon, destLat, destLon);
+        int walkTime = (int)((walkDist / 2.0) * 60);
+        endTime = addMinutes(endTime, walkTime);
+    }
+    
+    // Now write the file
     ofstream file(filename);
     
     if(!file.is_open()) {
@@ -518,6 +590,8 @@ void generateTextDirectionsMinTime(vector<int>& path, double srcLat, double srcL
     file << "Problem no : 5" << endl;
     file << "Source: (" << srcLat << ", " << srcLon << ")" << endl;
     file << "Destination: (" << destLat << ", " << destLon << ")" << endl;
+    file << "Start Time: " << startTime.hour << ":" << setfill('0') << setw(2) << startTime.minute << endl;
+    file << "End Time: " << endTime.hour << ":" << setfill('0') << setw(2) << endTime.minute << endl;
     file << "Total Time: " << setprecision(2) << (totalTime * 60.0) << " minutes" << endl;
     file << "Total Distance: " << setprecision(3) << totalDist << " km" << endl;
     file << endl;
@@ -828,14 +902,15 @@ int main() {
          << " at (" << nodes[destNode].lat << ", " << nodes[destNode].lon << ")"
          << " [distance: " << destDist << " km]" << endl;
     
-    // Run Dijkstra (using cost as weight)
-    cout << "\nRunning Dijkstra's algorithm (minimizing cost)..." << endl;
-    pair<map<int, double>, map<int, int>> result = dijkstra(adj, srcNode, nodes.size());
-    map<int, double> cost = result.first;
-    map<int, int> parent = result.second;
+    // Run time-aware Dijkstra (minimizing time with constraints)
+    cout << "\nRunning time-aware Dijkstra's algorithm (minimizing travel time)..." << endl;
+    map<int, double> totalTime;
+    map<int, int> parent;
+    map<int, TimeInfo> arrivalTimeMap;
+    tie(totalTime, parent, arrivalTimeMap) = dijkstraWithTimeP5(adj, srcNode, nodes.size(), startTime);
     
     // Check if destination is reachable
-    if(cost[destNode] >= 1e17) {
+    if(totalTime[destNode] >= 1e17) {
         cout << "No path found from source to destination!" << endl;
         return 1;
     }
@@ -854,7 +929,7 @@ int main() {
     
     cout << "\n=== ROUTE FOUND ===" << endl;
     cout << "Total time: " << fixed << setprecision(2) 
-         << (cost[destNode] * 60.0) << " minutes" << endl;
+         << (totalTime[destNode] * 60.0) << " minutes" << endl;
     cout << "Total distance: " << setprecision(3) 
          << totalDist << " km" << endl;
     cout << "Number of nodes in path: " << path.size() << endl;
@@ -880,7 +955,7 @@ int main() {
     // Generate output files
     cout << "\nGenerating output files..." << endl;
     generateTextDirectionsMinTime(path, srcLat, srcLon, destLat, destLon, 
-                          srcSnapped, destSnapped, cost[destNode], totalDist, 
+                          srcSnapped, destSnapped, totalTime[destNode], totalDist, 
                           startTime, "route_output.txt");
     generateKML(path, "route.kml");
     

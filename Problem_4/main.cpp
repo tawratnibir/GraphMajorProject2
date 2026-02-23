@@ -668,6 +668,43 @@ void generateTextDirections(vector<int>& path, double srcLat, double srcLon,
 void generateTextDirectionsWithTime(vector<int>& path, double srcLat, double srcLon, 
                           double destLat, double destLon, bool srcSnapped, bool destSnapped,
                           double totalCost, double totalDist, TimeInfo startTime, string filename) {
+    // Calculate end time first by simulating the journey
+    TimeInfo endTime = startTime;
+    
+    // Calculate initial walking time if needed
+    if(!srcSnapped) {
+        Point firstNode = nodes[path[0]];
+        double walkDist = haversineDistance(srcLat, srcLon, firstNode.lat, firstNode.lon);
+        int walkTime = (int)((walkDist / 2.0) * 60);
+        endTime = addMinutes(endTime, walkTime);
+    }
+    
+    // Calculate time through all path segments
+    for(int i = 0; i < path.size() - 1; i++) {
+        int u = path[i];
+        int v = path[i + 1];
+        EdgeInfo info = edgeInfo[{u, v}];
+        
+        // Add waiting time for public transport
+        if(info.type != "car") {
+            int waitTime = getWaitingTime(endTime);
+            endTime = addMinutes(endTime, waitTime);
+        }
+        
+        // Add travel time
+        int travelTime = (int)((info.distance / 30.0) * 60);
+        endTime = addMinutes(endTime, travelTime);
+    }
+    
+    // Calculate final walking time if needed
+    if(!destSnapped) {
+        Point lastNode = nodes[path[path.size() - 1]];
+        double walkDist = haversineDistance(lastNode.lat, lastNode.lon, destLat, destLon);
+        int walkTime = (int)((walkDist / 2.0) * 60);
+        endTime = addMinutes(endTime, walkTime);
+    }
+    
+    // Now write the file
     ofstream file(filename);
     
     if(!file.is_open()) {
@@ -680,6 +717,8 @@ void generateTextDirectionsWithTime(vector<int>& path, double srcLat, double src
     file << "Problem no : 4" << endl;
     file << "Source: (" << srcLat << ", " << srcLon << ")" << endl;
     file << "Destination: (" << destLat << ", " << destLon << ")" << endl;
+    file << "Start Time: " << startTime.hour << ":" << setfill('0') << setw(2) << startTime.minute << endl;
+    file << "End Time: " << endTime.hour << ":" << setfill('0') << setw(2) << endTime.minute << endl;
     file << "Total Cost: " << setprecision(2) << totalCost << " Taka" << endl;
     file << "Total Distance: " << setprecision(3) << totalDist << " km" << endl;
     file << endl;
